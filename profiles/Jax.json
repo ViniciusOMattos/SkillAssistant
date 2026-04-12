@@ -1,0 +1,63 @@
+{
+  "name": "Jax",
+  "combos": [
+    {
+      "attacks": [
+        {
+          "key": "c",
+          "delay": 100
+        },
+        {
+          "key": "2",
+          "delay": 100
+        },
+        {
+          "key": "q",
+          "delay": 100
+        },
+        {
+          "key": "w",
+          "delay": 100
+        }
+      ],
+      "hotkey": "z"
+    },
+    {
+      "attacks": [
+        {
+          "key": "q",
+          "delay": 100
+        },
+        {
+          "key": "e",
+          "delay": 100
+        },
+        {
+          "key": "c",
+          "delay": 100
+        },
+        {
+          "key": "t",
+          "delay": 100
+        },
+        {
+          "key": "c",
+          "delay": 100
+        },
+        {
+          "key": "2",
+          "delay": 100
+        },
+        {
+          "key": "c",
+          "delay": 100
+        },
+        {
+          "key": "e",
+          "delay": 100
+        }
+      ],
+      "hotkey": "x"
+    }
+  ]
+}

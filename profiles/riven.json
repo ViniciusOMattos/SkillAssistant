@@ -1,0 +1,79 @@
+{
+  "name": "riven",
+  "combos": [
+    {
+      "attacks": [
+        {
+          "key": "c",
+          "delay": 100
+        },
+        {
+          "key": "q",
+          "delay": 100
+        },
+        {
+          "key": "c",
+          "delay": 100
+        },
+        {
+          "key": "q",
+          "delay": 100
+        },
+        {
+          "key": "c",
+          "delay": 100
+        },
+        {
+          "key": "q",
+          "delay": 100
+        },
+        {
+          "key": "c",
+          "delay": 100
+        },
+        {
+          "key": "e",
+          "delay": 100
+        },
+        {
+          "key": "t",
+          "delay": 100
+        }
+      ],
+      "hotkey": "x"
+    },
+    {
+      "attacks": [
+        {
+          "key": "c",
+          "delay": 100
+        },
+        {
+          "key": "q",
+          "delay": 100
+        },
+        {
+          "key": "c",
+          "delay": 100
+        },
+        {
+          "key": "q",
+          "delay": 100
+        },
+        {
+          "key": "c",
+          "delay": 100
+        },
+        {
+          "key": "q",
+          "delay": 100
+        },
+        {
+          "key": "c",
+          "delay": 100
+        }
+      ],
+      "hotkey": "z"
+    }
+  ]
+}

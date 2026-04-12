@@ -1,0 +1,14 @@
+{
+  "name": "default",
+  "combos": [
+    {
+      "attacks": [
+        {
+          "key": "",
+          "delay": 100
+        }
+      ],
+      "hotkey": "z"
+    }
+  ]
+}
