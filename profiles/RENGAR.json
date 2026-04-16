@@ -4,10 +4,6 @@
     {
       "attacks": [
         {
-          "key": "c",
-          "delay": 100
-        },
-        {
           "key": "q",
           "delay": 100
         },
@@ -24,15 +20,11 @@
           "delay": 100
         },
         {
-          "key": "c",
-          "delay": 100
-        },
-        {
           "key": "2",
           "delay": 100
         }
       ],
-      "hotkey": "x"
+      "hotkey": "c"
     }
   ]
 }

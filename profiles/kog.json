@@ -1,26 +1,26 @@
 {
-  "name": "riven",
+  "name": "kog",
   "combos": [
     {
       "attacks": [
-        {
-          "key": "q",
-          "delay": 200
-        },
-        {
-          "key": "q",
-          "delay": 200
-        },
-        {
-          "key": "q",
-          "delay": 200
-        },
         {
           "key": "e",
           "delay": 100
         },
         {
+          "key": "q",
+          "delay": 100
+        },
+        {
+          "key": "r",
+          "delay": 100
+        },
+        {
           "key": "t",
+          "delay": 100
+        },
+        {
+          "key": "2",
           "delay": 100
         }
       ],

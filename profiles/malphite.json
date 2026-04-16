@@ -1,26 +1,26 @@
 {
-  "name": "riven",
+  "name": "malphite",
   "combos": [
     {
       "attacks": [
         {
-          "key": "q",
-          "delay": 200
+          "key": "r",
+          "delay": 100
         },
         {
           "key": "q",
-          "delay": 200
+          "delay": 100
         },
         {
-          "key": "q",
-          "delay": 200
+          "key": "t",
+          "delay": 100
         },
         {
           "key": "e",
           "delay": 100
         },
         {
-          "key": "t",
+          "key": "2",
           "delay": 100
         }
       ],

@@ -1,0 +1,18 @@
+{
+  "name": "KHART",
+  "combos": [
+    {
+      "attacks": [
+        {
+          "key": "Q",
+          "delay": 100
+        },
+        {
+          "key": "T",
+          "delay": 100
+        }
+      ],
+      "hotkey": "x"
+    }
+  ]
+}

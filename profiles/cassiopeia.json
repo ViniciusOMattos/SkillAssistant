@@ -1,5 +1,5 @@
 {
-  "name": "Jax",
+  "name": "cassiopeia",
   "combos": [
     {
       "attacks": [
@@ -12,7 +12,7 @@
           "delay": 100
         },
         {
-          "key": "r",
+          "key": "e",
           "delay": 100
         },
         {
@@ -20,20 +20,27 @@
           "delay": 100
         },
         {
-          "key": "2",
+          "key": "e",
+          "delay": 100
+        },
+        {
+          "key": "r",
+          "delay": 100
+        },
+        {
+          "key": "e",
+          "delay": 100
+        },
+        {
+          "key": "q",
+          "delay": 100
+        },
+        {
+          "key": "e",
           "delay": 100
         }
       ],
       "hotkey": "c"
-    },
-    {
-      "attacks": [
-        {
-          "key": "q",
-          "delay": 100
-        }
-      ],
-      "hotkey": "x"
     }
   ]
 }

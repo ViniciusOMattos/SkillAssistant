@@ -2,7 +2,19 @@ import pyautogui
 import time
 import json
 import os
-from pynput import keyboard
+import sys
+
+IS_MACOS = sys.platform == "darwin"
+
+if IS_MACOS:
+    try:
+        from Quartz import CGEventSourceKeyState, kCGEventSourceStateHIDSystemState
+
+        QUARTZ_AVAILABLE = True
+    except ImportError:
+        QUARTZ_AVAILABLE = False
+else:
+    QUARTZ_AVAILABLE = True
 
 pyautogui.PAUSE = 0
 
@@ -10,11 +22,98 @@ PROFILES_DIR = "profiles"
 
 DEFAULT_DELAY = 100
 
+pressed_keys = set()
+prev_key_states = {}
 
-def normalize_key(char):
-    if char is None:
-        return None
-    return char.lower()
+KEYCODE_TO_CHAR = {
+    0: "a",
+    1: "s",
+    2: "d",
+    3: "f",
+    4: "h",
+    5: "g",
+    6: "z",
+    7: "x",
+    8: "c",
+    9: "v",
+    11: "b",
+    12: "q",
+    13: "w",
+    14: "e",
+    15: "r",
+    16: "y",
+    17: "t",
+    18: "1",
+    19: "2",
+    20: "3",
+    21: "4",
+    22: "6",
+    23: "5",
+    24: "=",
+    25: "9",
+    26: "7",
+    27: "-",
+    28: "8",
+    29: "0",
+    30: "]",
+    31: "o",
+    32: "u",
+    33: "[",
+    34: "i",
+    35: "p",
+    37: "l",
+    38: "j",
+    39: "'",
+    40: "k",
+    41: ";",
+    42: "\\",
+    43: ",",
+    44: "/",
+    45: "n",
+    46: "m",
+    47: ".",
+    49: " ",
+    50: "`",
+    51: ")",
+    123: "left",
+    124: "right",
+    125: "down",
+    126: "up",
+}
+
+
+def poll_keyboard():
+    global prev_key_states
+
+    for keycode, char in KEYCODE_TO_CHAR.items():
+        current = (
+            CGEventSourceKeyState(kCGEventSourceStateHIDSystemState, keycode)
+            if IS_MACOS
+            else False
+        )
+        prev = prev_key_states.get(keycode, 0)
+
+        if current and not prev:
+            if char not in pressed_keys:
+                pressed_keys.add(char)
+                if bot.running:
+                    for i, combo in enumerate(bot.combos):
+                        hotkey = combo.get("hotkey", "")
+                        if char == hotkey:
+                            bot.combos_state[i]["pressed"] = True
+                            bot.combos_state[i]["idx"] = 0
+                            bot.combos_state[i]["next_time"] = 0
+                            bot.combos_state[i]["initial_fire"] = True
+        elif not current and prev:
+            pressed_keys.discard(char)
+            for i, combo in enumerate(bot.combos):
+                hotkey = combo.get("hotkey", "")
+                if char == hotkey:
+                    bot.combos_state[i]["pressed"] = False
+
+        prev_key_states[keycode] = current
+
+    root.after(15, poll_keyboard)
 
 
 class ProfileManager:
@@ -112,31 +211,6 @@ class SkillAssistantBot:
 
 
 bot = SkillAssistantBot()
-
-
-def on_press(key):
-    char = normalize_key(getattr(key, "char", None))
-
-    if bot.running:
-        for i, combo in enumerate(bot.combos):
-            hotkey = combo.get("hotkey", "")
-            if char == hotkey:
-                bot.combos_state[i]["pressed"] = True
-                bot.combos_state[i]["idx"] = 0
-                bot.combos_state[i]["next_time"] = 0
-                bot.combos_state[i]["initial_fire"] = True
-
-
-def on_release(key):
-    char = normalize_key(getattr(key, "char", None))
-    for i, combo in enumerate(bot.combos):
-        hotkey = combo.get("hotkey", "")
-        if char == hotkey:
-            bot.combos_state[i]["pressed"] = False
-
-
-listener = keyboard.Listener(on_press=on_press, on_release=on_release)
-listener.start()
 
 
 import tkinter as tk
@@ -676,5 +750,6 @@ def run_loop():
 
 
 refresh_ui()
+root.after(15, poll_keyboard)
 root.after(100, run_loop)
 root.mainloop()
