@@ -1,12 +1,8 @@
 {
-  "name": "Malphite",
+  "name": "Yumi",
   "combos": [
     {
       "attacks": [
-        {
-          "key": "t",
-          "delay": 100
-        },
         {
           "key": "q",
           "delay": 100
@@ -14,23 +10,29 @@
         {
           "key": "e",
           "delay": 100
-        },
-        {
-          "key": "r",
-          "delay": 100
         }
       ],
-      "hotkey": "c",
+      "hotkey": "x",
       "auto_aim": true
     },
     {
       "attacks": [
         {
-          "key": "q",
+          "key": "t",
           "delay": 100
         }
       ],
-      "hotkey": "x",
+      "hotkey": "z",
+      "auto_aim": false
+    },
+    {
+      "attacks": [
+        {
+          "key": "",
+          "delay": 100
+        }
+      ],
+      "hotkey": "r",
       "auto_aim": true
     }
   ]

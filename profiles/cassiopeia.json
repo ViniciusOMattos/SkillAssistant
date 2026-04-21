@@ -1,5 +1,5 @@
 {
-  "name": "cassiopeia",
+  "name": "Cassiopeia",
   "combos": [
     {
       "attacks": [
@@ -8,39 +8,16 @@
           "delay": 100
         },
         {
-          "key": "e",
-          "delay": 100
-        },
-        {
-          "key": "e",
-          "delay": 100
-        },
-        {
           "key": "t",
-          "delay": 100
-        },
-        {
-          "key": "e",
           "delay": 100
         },
         {
           "key": "r",
           "delay": 100
-        },
-        {
-          "key": "e",
-          "delay": 100
-        },
-        {
-          "key": "q",
-          "delay": 100
-        },
-        {
-          "key": "e",
-          "delay": 100
         }
       ],
-      "hotkey": "c"
+      "hotkey": "c",
+      "auto_aim": true
     }
   ]
 }

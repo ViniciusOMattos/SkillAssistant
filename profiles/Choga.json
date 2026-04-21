@@ -1,12 +1,8 @@
 {
-  "name": "Brand",
+  "name": "Choga",
   "combos": [
     {
       "attacks": [
-        {
-          "key": "e",
-          "delay": 100
-        },
         {
           "key": "q",
           "delay": 100
@@ -16,11 +12,21 @@
           "delay": 100
         },
         {
-          "key": "r",
+          "key": "e",
           "delay": 100
         }
       ],
       "hotkey": "c",
+      "auto_aim": true
+    },
+    {
+      "attacks": [
+        {
+          "key": "r",
+          "delay": 100
+        }
+      ],
+      "hotkey": "x",
       "auto_aim": true
     }
   ]

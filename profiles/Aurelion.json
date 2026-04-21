@@ -1,22 +1,14 @@
 {
-  "name": "Malphite",
+  "name": "Aurelion",
   "combos": [
     {
       "attacks": [
-        {
-          "key": "t",
-          "delay": 100
-        },
-        {
-          "key": "q",
-          "delay": 100
-        },
         {
           "key": "e",
           "delay": 100
         },
         {
-          "key": "r",
+          "key": "z",
           "delay": 100
         }
       ],
@@ -26,12 +18,22 @@
     {
       "attacks": [
         {
-          "key": "q",
+          "key": "",
           "delay": 100
         }
       ],
       "hotkey": "x",
       "auto_aim": true
+    },
+    {
+      "attacks": [
+        {
+          "key": "",
+          "delay": 100
+        }
+      ],
+      "hotkey": "q",
+      "auto_aim": false
     }
   ]
 }

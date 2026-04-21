@@ -1,14 +1,10 @@
 {
-  "name": "BRIAR",
+  "name": "Caity",
   "combos": [
     {
       "attacks": [
         {
-          "key": "w",
-          "delay": 100
-        },
-        {
-          "key": "w",
+          "key": "t",
           "delay": 100
         },
         {
@@ -18,13 +14,10 @@
         {
           "key": "e",
           "delay": 100
-        },
-        {
-          "key": "2",
-          "delay": 100
         }
       ],
-      "hotkey": "c"
+      "hotkey": "c",
+      "auto_aim": true
     }
   ]
 }

@@ -1,19 +1,11 @@
 {
-  "name": "riven",
+  "name": "Kalista",
   "combos": [
     {
       "attacks": [
         {
           "key": "q",
-          "delay": 200
-        },
-        {
-          "key": "q",
-          "delay": 200
-        },
-        {
-          "key": "q",
-          "delay": 200
+          "delay": 100
         },
         {
           "key": "e",
@@ -24,7 +16,8 @@
           "delay": 100
         }
       ],
-      "hotkey": "c"
+      "hotkey": "c",
+      "auto_aim": true
     }
   ]
 }

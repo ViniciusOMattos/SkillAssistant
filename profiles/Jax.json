@@ -4,36 +4,34 @@
     {
       "attacks": [
         {
-          "key": "q",
-          "delay": 100
-        },
-        {
           "key": "e",
-          "delay": 100
+          "delay": 1
         },
         {
-          "key": "r",
-          "delay": 100
+          "key": "q",
+          "delay": 1
         },
         {
           "key": "t",
-          "delay": 100
+          "delay": 1
         },
         {
-          "key": "2",
-          "delay": 100
+          "key": "r",
+          "delay": 1
         }
       ],
-      "hotkey": "c"
+      "hotkey": "c",
+      "auto_aim": true
     },
     {
       "attacks": [
         {
-          "key": "q",
+          "key": "e",
           "delay": 100
         }
       ],
-      "hotkey": "x"
+      "hotkey": "x",
+      "auto_aim": false
     }
   ]
 }

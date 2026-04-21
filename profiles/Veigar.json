@@ -1,5 +1,5 @@
 {
-  "name": "Brand",
+  "name": "Veigar",
   "combos": [
     {
       "attacks": [
@@ -8,11 +8,11 @@
           "delay": 100
         },
         {
-          "key": "q",
+          "key": "t",
           "delay": 100
         },
         {
-          "key": "t",
+          "key": "q",
           "delay": 100
         },
         {
@@ -20,7 +20,7 @@
           "delay": 100
         }
       ],
-      "hotkey": "c",
+      "hotkey": "x",
       "auto_aim": true
     }
   ]

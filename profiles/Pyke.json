@@ -1,22 +1,30 @@
 {
-  "name": "Malphite",
+  "name": "Pyke",
   "combos": [
     {
       "attacks": [
         {
-          "key": "t",
+          "key": "",
           "delay": 100
-        },
+        }
+      ],
+      "hotkey": "x",
+      "auto_aim": true
+    },
+    {
+      "attacks": [
         {
-          "key": "q",
+          "key": "",
           "delay": 100
-        },
+        }
+      ],
+      "hotkey": "r",
+      "auto_aim": true
+    },
+    {
+      "attacks": [
         {
-          "key": "e",
-          "delay": 100
-        },
-        {
-          "key": "r",
+          "key": "",
           "delay": 100
         }
       ],
@@ -26,11 +34,11 @@
     {
       "attacks": [
         {
-          "key": "q",
+          "key": "",
           "delay": 100
         }
       ],
-      "hotkey": "x",
+      "hotkey": "z",
       "auto_aim": true
     }
   ]

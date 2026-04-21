@@ -1,26 +1,18 @@
 {
-  "name": "Malphite",
+  "name": "karthus",
   "combos": [
     {
       "attacks": [
-        {
-          "key": "t",
-          "delay": 100
-        },
         {
           "key": "q",
           "delay": 100
         },
         {
-          "key": "e",
-          "delay": 100
-        },
-        {
-          "key": "r",
+          "key": "t",
           "delay": 100
         }
       ],
-      "hotkey": "c",
+      "hotkey": "x",
       "auto_aim": true
     },
     {
@@ -28,10 +20,14 @@
         {
           "key": "q",
           "delay": 100
+        },
+        {
+          "key": "t",
+          "delay": 100
         }
       ],
-      "hotkey": "x",
-      "auto_aim": true
+      "hotkey": "z",
+      "auto_aim": false
     }
   ]
 }

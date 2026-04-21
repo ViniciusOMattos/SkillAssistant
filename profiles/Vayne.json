@@ -1,16 +1,8 @@
 {
-  "name": "renek",
+  "name": "Vayne",
   "combos": [
     {
       "attacks": [
-        {
-          "key": "e",
-          "delay": 100
-        },
-        {
-          "key": "t",
-          "delay": 100
-        },
         {
           "key": "q",
           "delay": 100
@@ -20,15 +12,12 @@
           "delay": 100
         },
         {
-          "key": "2",
-          "delay": 100
-        },
-        {
           "key": "r",
           "delay": 100
         }
       ],
-      "hotkey": "c"
+      "hotkey": "c",
+      "auto_aim": true
     }
   ]
 }

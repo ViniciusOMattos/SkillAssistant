@@ -1,5 +1,5 @@
 {
-  "name": "cho",
+  "name": "Lux",
   "combos": [
     {
       "attacks": [
@@ -8,7 +8,11 @@
           "delay": 100
         },
         {
-          "key": "t",
+          "key": "e",
+          "delay": 100
+        },
+        {
+          "key": "r",
           "delay": 100
         },
         {
@@ -16,20 +20,12 @@
           "delay": 100
         },
         {
-          "key": "2",
+          "key": "t",
           "delay": 100
         }
       ],
-      "hotkey": "c"
-    },
-    {
-      "attacks": [
-        {
-          "key": "r",
-          "delay": 100
-        }
-      ],
-      "hotkey": "x"
+      "hotkey": "c",
+      "auto_aim": true
     }
   ]
 }
